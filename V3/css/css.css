@@ -1,0 +1,215 @@
+*{
+	box-sizing: border-box;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+ul{
+	padding: 0;
+	list-style-type:none ;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+body{
+	background: url(../img/1.jpeg)center top fixed;
+	min-height: 1200px;
+	color: #fff;
+}
+.wrapper{
+	max-height: 1200px;
+	padding: 20px;
+	margin: auto;
+}
+header{
+	position: relative;
+	margin: 30px 0px;
+}
+.log h1{
+	display: none;
+}
+.logo img{
+	width: 80px:
+	height:auto;
+}
+.mainNav{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.mainNav ul li{
+    float: left;
+    margin: 20px 30px;
+}
+.mainNav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid transparent;
+    transition: color .5s,border .5s;
+}
+.mainNav ul li a:hover{
+    color: #000;
+    border: 1px solid #fff;
+}
+header h2{
+    margin: 50px 0;
+    font-size: 30px;
+}
+p a{
+    border-bottom:1px dashed #fff;
+    padding-bottom: 4px;
+    transition: border .5s;
+}
+p a:hover{
+    border-bottom:1px solid #fff;
+}
+main section ul li{
+	float: left;
+	margin: 25px;
+}
+main section ul li a{
+	padding:20px 60px;
+	background-color:rgba(255,219,109,0.5);
+	transition: all 0.5s;
+	border-radius:10px ;
+	color: white;
+}
+main section ul li a:hover{
+	background-color:rgb(255,202,41);
+	border-radius:0px ;
+}
+main section .xiang{
+	margin-left:25px ;
+}
+main section .xiang figure{
+	float: left;
+	position: relative;
+}
+main section .xiang figure a img{
+	position: relative;
+	width:250px;
+	-webkit-filter: grayscale(40%); 
+	-moz-filter: grayscale(40%); 
+	-ms-filter: grayscale(40%); 
+	-o-filter: grayscale(40%); 
+	filter: grayscale(40%);
+	filter: gray; 
+	transition: all 0.5s;
+}
+main section .xiang figure:hover a img{
+	-webkit-filter: grayscale(0); 
+	-moz-filter: grayscale(0); 
+	-ms-filter: grayscale(0); 
+	-o-filter: grayscale(0);
+	filter: grayscale(0); 
+}
+main section .xiang figure figcaption{
+	position:absolute;
+	color: white;
+	z-index: 2;
+	margin: 23% 35%;
+	opacity: 0;
+	transition: all 0.5s;
+	}
+main section .xiang figure:hover figcaption{
+	opacity: 1;
+}
+.work{
+    padding: 0;
+    margin: 0;
+}
+.work figure{
+    width: 30%;
+    margin: calc(10% / 6) calc(10% / 2) 0 0;
+    float: left;
+    position: relative;
+}
+.work figure:nth-child(3n){
+    margin-right: 0px;
+}
+.work figure figcaption{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    z-index: 3;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.work figure:hover figcaption{
+    opacity: 1;
+}
+.work figure img{
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(.5);
+    transition: webkit-filter .5s;
+    cursor: pointer;
+}
+.work figure:hover img{
+    -webkit-filter: grayscale(0);
+}
+.contactContainer dl dt{
+    padding:5px 20px;
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+}
+.contactContainer dl dd{
+    padding:5px 20px;
+    background-color: #000;
+    color: #fff;
+    margin: 0px 30px 0px 0px;
+    display: inline-block;
+}
+.contact input{
+    width: 31%;
+    margin: 5px 2% 5px 0px;
+    padding: 10px 16px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+.contact select{
+    width: 32%;
+    padding: 10px 16px;
+    border-radius: 3px;
+    margin: 5px 0px 5px 4px;
+}
+.contact textarea,
+.contact input[type="submit"]{
+    width: 48%;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 3px;
+    margin: 5px 3% 5px 0px;
+    vertical-align: top;
+}
+.contact input[type="submit"]{
+    margin: 5px 0px;
+    border:none;
+    outline: none;
+    background-color: #00BFFF;
+    cursor: pointer;
+}
+#goTop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.8em;
+    color: #fff;
+}
